@@ -75,27 +75,23 @@ function startScanner() {
 // Display medicine information
 function showMedicine(code) {
 
-    let medicine = medicines[code.trim().toUpperCase()];
+    // Remove spaces and convert to uppercase
+    code = code.trim().toUpperCase();
+
+    console.log("QR Scanned:", code);
+
+    let medicine = medicines[code];
 
     if (medicine) {
 
         document.getElementById("result").style.display = "block";
 
-        document.getElementById("name").innerText =
-            medicine.name;
-
-        document.getElementById("batch").innerText =
-            medicine.batch;
-
-        document.getElementById("mfg").innerText =
-            medicine.mfg;
-
-        document.getElementById("exp").innerText =
-            medicine.exp;
-
+        document.getElementById("name").innerText = medicine.name;
+        document.getElementById("batch").innerText = medicine.batch;
+        document.getElementById("mfg").innerText = medicine.mfg;
+        document.getElementById("exp").innerText = medicine.exp;
         document.getElementById("manufacturer").innerText =
             medicine.manufacturer;
-
         document.getElementById("storage").innerText =
             medicine.storage;
 
@@ -103,12 +99,11 @@ function showMedicine(code) {
 
     } else {
 
-        alert("Medicine QR code not registered!");
+        alert("QR scanned: " + code +
+              "\n\nThis QR code is not registered.");
 
     }
 }
-
-
 // Check expiry date
 function checkExpiry(expiryDate) {
 
