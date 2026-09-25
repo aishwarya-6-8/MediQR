@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SmartMediQR</title>
+    <link rel="stylesheet" href="mediqr.css">
+
+    <!-- QR Scanner Library -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💊 SmartMediQR</h1>
+        <p class="subtitle">Cut-Safe Medicine Information System</p>
+
+        <div class="card">
+
+            <h2>Scan Medicine QR</h2>
+
+            <div id="reader"></div>
+
+            <button onclick="startScanner()">
+                📷 Start Camera
+            </button>
+
+            <p id="scanMessage">
+                Click Start Camera and scan the QR code.
+            </p>
+
+        </div>
+
+        <div id="result" class="result">
+
+            <h2>Medicine Information</h2>
+
+            <p>
+                <b>Medicine Name:</b>
+                <span id="name"></span>
+            </p>
+
+            <p>
+                <b>Batch Number:</b>
+                <span id="batch"></span>
+            </p>
+
+            <p>
+                <b>Manufacturing Date:</b>
+                <span id="mfg"></span>
+            </p>
+
+            <p>
+                <b>Expiry Date:</b>
+                <span id="exp"></span>
+            </p>
+
+            <p>
+                <b>Manufacturer:</b>
+                <span id="manufacturer"></span>
+            </p>
+
+            <p>
+                <b>Storage:</b>
+                <span id="storage"></span>
+            </p>
+
+            <div id="status"></div>
+
+        </div>
+
+    </div>
+
+    <script src="mediqr.js"></script>
+
+</body>
+
+</html>

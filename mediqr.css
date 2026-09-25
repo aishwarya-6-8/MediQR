@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #087f8c;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.card,
+.result {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#reader {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #087f8c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #05616b;
+}
+
+#scanMessage {
+    color: #666;
+    margin-top: 15px;
+}
+
+.result {
+    display: none;
+    text-align: left;
+}
+
+.result h2 {
+    text-align: center;
+    color: #087f8c;
+}
+
+.result p {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#status {
+    text-align: center;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+}
