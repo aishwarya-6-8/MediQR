@@ -1,7 +1,7 @@
 // Medicine database
 const medicines = {
 
-    "HTTPS://Q.ME-QR.COM/JYBDOZLS": {
+    "MED001": {
         name: "Paracetamol 500 mg",
         batch: "PCM12345",
         mfg: "2026-06-01",
